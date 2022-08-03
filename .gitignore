@@ -1,0 +1,7 @@
+node_modules
+.tmp
+.env
+dist/
+public/uploads/
+src/extensions/.gitkeep
+src/api/.gitkeep
