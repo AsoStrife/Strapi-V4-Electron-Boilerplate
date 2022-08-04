@@ -9,7 +9,8 @@
     "strapi-build": "strapi build",
     "electron": "electron .",
     "electron-build": "electron-builder",
-    "build": "strapi build && electron-builder"
+    "build": "strapi build && electron-builder",
+    "test": "electron-builder build"
   },
   "keywords": [
     "Electron",
@@ -20,16 +21,16 @@
   "author": "Andrea Corriga",
   "license": "MIT",
   "dependencies": {
-    "@strapi/plugin-i18n": "4.3.0",
-    "@strapi/plugin-users-permissions": "4.3.0",
     "@strapi/strapi": "4.3.2",
+    "@strapi/plugin-i18n": "4.3.2",
+    "@strapi/plugin-users-permissions": "4.3.2",
     "better-sqlite3": "7.4.6",
     "electron-is-dev": "^2.0.0",
     "electron-is-packaged": "^1.0.2"
   },
   "devDependencies": {
     "electron": "^19.0.8",
-    "electron-builder": "^22.14.5"
+    "electron-builder": "^23.3.3"
   },
   "strapi": {
     "uuid": "23376639-3e73-4487-812b-a57332ff6859"
@@ -37,5 +38,9 @@
   "engines": {
     "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
+  },
+  "build": {
+    "appId": "com.example.app",
+    "asar": false
   }
 }

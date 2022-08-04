@@ -5,3 +5,6 @@ dist/
 public/uploads/
 src/extensions/.gitkeep
 src/api/.gitkeep
+.cache/
+build/
+.strapi-updater.json

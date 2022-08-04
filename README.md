@@ -55,3 +55,7 @@ NODE_MODULE_VERSION 106. Please try re-compiling or re-installing
 To fix this problem you can simply go the following page [Releases · WiseLibs/better-sqlite3 (github.com)](https://github.com/WiseLibs/better-sqlite3/releases), find the correct build version you need and paste the `better_sqlite3.node` into `/node_modules/better-sqlite3/build/Release`.
 
 In my case, using windows and `NODE_MODULE_VERSION 106` I downloaded the following file: `better-sqlite3-v7.6.2-electron-v106-win32-x64.tar.gz`
+
+
+
+## Built App Crashes on Startup problem
