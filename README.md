@@ -24,8 +24,15 @@ git clone https://github.com/AsoStrife/Strapi-V4-Electron-Boilerplate
 cd Strapi-V4-Electron-Boilerplate
 # Install dependencies
 npm i
-# Run the app
+
+# Run for the very first time strapi
+npm run strapi-develop
+
+# Now you can Run the app with electron
 npm run electron
+
+# Build the app
+npm run build
 ```
 
 ## Scripts
@@ -56,6 +63,10 @@ To fix this problem you can simply go the following page [Releases · WiseLibs/b
 
 In my case, using windows and `NODE_MODULE_VERSION 106` I downloaded the following file: `better-sqlite3-v7.6.2-electron-v106-win32-x64.tar.gz`
 
-
-
 ## Built App Crashes on Startup problem
+
+Once the app is built, if you try to run the executable (eg.`.exe`) and the app crashes on startup you may need to copy and paste the `.env`file inside the folder where the executable is located.
+
+So if your `.exe` is located on `./dist/win-unpacked/Strapi-V4-Electron-Boilerplate.exe` copy the `.env-example` into that folder and rename it in `.env`. 
+
+This file follow the Strapi guideline. Check out strapi's documentation to learn more.
