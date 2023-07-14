@@ -63,6 +63,8 @@ To fix this problem you can simply go the following page [Releases · WiseLibs/b
 
 In my case, using windows and `NODE_MODULE_VERSION 106` I downloaded the following file: `better-sqlite3-v7.6.2-electron-v106-win32-x64.tar.gz`
 
+ALTERNATIVE SOLUTION: run ` ./node_modules/.bin/electron-builder` rebuilds better-sqlite3 using the right version
+
 ## Built App Crashes on Startup problem
 
 Once the app is built, if you try to run the executable (eg.`.exe`) and the app crashes on startup you may need to copy and paste the `.env`file inside the folder where the executable is located.
